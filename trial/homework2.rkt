@@ -1,4 +1,12 @@
 #lang racket
+
+#|
+Phu Nguyen
+Homework2
+tue-thu, 11-12.30
+|#
+
+
 #| problem 1 |#
 ( define average
    ( lambda ( a b c )
@@ -41,8 +49,19 @@
            )))
 
 (f '( (3 5) (6 9))) ;63
-;(f '( (3 5) (6 9) (2 3)))
+#| function f gets multiply 2 numbers inside the 2 parentheses of a list
+    ,then add them together|#
+
+(f '( (3 5) (6 9) (2 3))) ;63
+#| f function never reaches the third group of number
+, therefore the output is the same|#
+
 ;(f '( (3 5) ))
+#| cadr: contract violation
+  expected: (cons/c any/c pair?)
+  given: '((3 5)) |#
+#| f function requires 2 groups of 2 numbers
+(it looks for 2nd group using cadr) |#
 
 #| problem 5 |#
 ( define g
@@ -93,10 +112,23 @@
     ( cond
        ((> x y) true)
        ((< x y) false)
-       (else "both points have equal distance")
+       (else false)
     )
   )
 )
 )
 
 ( greater '(10  6)  '( 2  3) ) ;true
+
+#| outputs:
+
+5
+38
+2
+63
+63
+73
+4
+#t
+
+|#
