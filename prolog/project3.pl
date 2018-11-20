@@ -49,6 +49,22 @@ likes(cindy,art).
 likes(cynthia, yoga).
 likes(tim,art).
 
+likes(jim, writing).
+likes(jim, football).
+likes(jim, dance).
+likes(jim,cooking).
+likes(may, writing).
+likes(may, football).
+likes(luis,movies).
+likes(luis,music).
+likes(noah, football).
+likes(noah, dance).
+likes(noah, yoga).
+likes(rain, books).
+likes(rain,writing).
+likes(rain, dance).
+likes(rain,art).
+
 /** rules */
 
 /** rules 1 - 2 */
